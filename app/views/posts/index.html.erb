@@ -1,0 +1,8 @@
+<h1 style="text-align:center"> Universe Blog </h1>
+<% @posts.each do |post| %>
+    <%= post.titulo %>
+    <%= post.fecha_ingreso %>
+    <%= post.contenido %>
+    <img src='<%= post.imagen %>'>
+   
+    <% end %>
